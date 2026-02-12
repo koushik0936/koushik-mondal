@@ -1,0 +1,7 @@
+{
+  "name": "AISub BD - Premium AI Subscription Platform",
+  "description": "A comprehensive subscription platform for Bangladeshi users to purchase premium AI tools like ChatGPT Plus, Claude Pro, and Midjourney using local payment methods like bKash, Nagad, and Rocket.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

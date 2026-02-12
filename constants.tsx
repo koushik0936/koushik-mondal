@@ -1,0 +1,112 @@
+
+import { AITool, Language } from './types';
+
+export const TOOLS: AITool[] = [
+  {
+    id: 'chatgpt',
+    name: 'ChatGPT Plus',
+    icon: '🤖',
+    description: 'Get priority access to GPT-4o, DALL-E 3, and advanced data analysis.',
+    features: ['GPT-4o Access', 'DALL-E 3 Image Generation', 'Custom GPTs', 'Priority Access'],
+    plans: [
+      { id: 'cgpt-1m', name: '1 Month', duration: '1 Month', price: 850 },
+      { id: 'cgpt-3m', name: '3 Months', duration: '3 Months', price: 2400 },
+      { id: 'cgpt-6m', name: '6 Months', duration: '6 Months', price: 4500 },
+    ],
+  },
+  {
+    id: 'claude',
+    name: 'Claude Pro',
+    icon: '🧠',
+    description: 'Anthropic\'s most powerful model with a large context window.',
+    features: ['Claude 3.5 Sonnet', 'High usage limits', 'Priority access', 'Early features'],
+    plans: [
+      { id: 'cl-1m', name: '1 Month', duration: '1 Month', price: 900 },
+      { id: 'cl-3m', name: '3 Months', duration: '3 Months', price: 2550 },
+      { id: 'cl-6m', name: '6 Months', duration: '6 Months', price: 4800 },
+    ],
+  },
+  {
+    id: 'midjourney',
+    name: 'Midjourney',
+    icon: '🎨',
+    description: 'The world\'s best AI image generation tool.',
+    features: ['Basic Plan', 'Standard Plan', 'Pro Plan', 'Fast GPU hours'],
+    plans: [
+      { id: 'mj-basic', name: 'Basic', duration: '1 Month', price: 500 },
+      { id: 'mj-std', name: 'Standard', duration: '1 Month', price: 1200 },
+      { id: 'mj-pro', name: 'Pro', duration: '1 Month', price: 2500 },
+    ],
+  },
+  {
+    id: 'github-copilot',
+    name: 'GitHub Copilot',
+    icon: '💻',
+    description: 'Your AI pair programmer, helping you write code faster.',
+    features: ['Code completions', 'Chat in IDE', 'CLI assistance', 'Enterprise ready'],
+    plans: [
+      { id: 'gh-1m', name: '1 Month', duration: '1 Month', price: 500 },
+      { id: 'gh-1y', name: '1 Year', duration: '1 Year', price: 5000 },
+    ],
+  },
+  {
+    id: 'canva',
+    name: 'Canva Pro',
+    icon: '✨',
+    description: 'Design everything from social media posts to professional reports.',
+    features: ['Magic Studio', 'Brand Kit', '100M+ Premium photos', 'Cloud storage'],
+    plans: [
+      { id: 'can-1m', name: '1 Month', duration: '1 Month', price: 350 },
+      { id: 'can-1y', name: '1 Year', duration: '1 Year', price: 3800 },
+    ],
+  },
+];
+
+export const TRANSLATIONS = {
+  [Language.EN]: {
+    heroTitle: "Unlock the Power of AI in Bangladesh",
+    heroSub: "Purchase premium subscriptions safely and easily using bKash, Nagad, or Rocket.",
+    login: "Login",
+    register: "Register",
+    dashboard: "Dashboard",
+    admin: "Admin Panel",
+    tools: "AI Tools",
+    pricing: "Pricing",
+    buyNow: "Buy Now",
+    details: "View Details",
+    orderStatus: "Order Status",
+    paymentMethods: "Payment Methods",
+    bkashNum: "01700-000000",
+    nagadNum: "01800-000000",
+    rocketNum: "01900-000000 (0)",
+    step1: "Select Plan",
+    step2: "Make Payment",
+    step3: "Submit Transaction",
+    txId: "Transaction ID",
+    senderNum: "Sender Phone Number",
+    confirmPayment: "Confirm Payment",
+  },
+  [Language.BN]: {
+    heroTitle: "বাংলাদেশে এআই-এর শক্তি উন্মোচন করুন",
+    heroSub: "বিকাশ, নগদ বা রকেটের মাধ্যমে নিরাপদে এবং সহজে প্রিমিয়াম সাবস্ক্রিপশন কিনুন।",
+    login: "লগইন",
+    register: "নিবন্ধন",
+    dashboard: "ড্যাশবোর্ড",
+    admin: "অ্যাডমিন প্যানেল",
+    tools: "এআই টুলস",
+    pricing: "মূল্যতালিকা",
+    buyNow: "কিনুন",
+    details: "বিস্তারিত",
+    orderStatus: "অর্ডারের অবস্থা",
+    paymentMethods: "পেমেন্ট পদ্ধতি",
+    bkashNum: "০১৭০০-০০০০০০",
+    nagadNum: "০১৮০০-০০০০০০",
+    rocketNum: "০১৯০০-০০০০০০ (০)",
+    step1: "প্ল্যান নির্বাচন করুন",
+    step2: "পেমেন্ট করুন",
+    step3: "ট্রানজেকশন জমা দিন",
+    txId: "ট্রানজেকশন আইডি",
+    senderNum: "সেন্ডার ফোন নম্বর",
+    confirmPayment: "পেমেন্ট নিশ্চিত করুন",
+  }
+};
